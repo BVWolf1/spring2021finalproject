@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+  </head>
+    <body>
+    <nav><ul class="nav-container">
+        <li class="home"><a href="#">Home</a></li>
+        <li class="about"><a href="#">About</a></li>
+        <li class="visit" id="selected"><a href="#">Visitors</a></li>       
+        </ul></nav>
+    <header> <h1 id="title">Bakers Gallery Visitor's Survey Form</h1>
+        <p id="description">Help improve your visitor's experience by taking the survey below:</p></header>
+     
+    <main>
+       
+	   <form id="survey-form" action="http://lbcc.edu" method="post">
+		
+            <div class="contact1">
+            <label id="name-label" class="contact_label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Name" required>   
+            <label id="address-label" class="contact_label" for="address">Address</label>
+            <input type="text" id="address"  placeholder="Address">
+            <label id="state-label" class="contact_label" for="state">State</label>
+            <input type="text" id="state" placeholder="State">
+            <label id="zipcode-label" class="contact_label" for="zipcode">Zip Code</label>
+            <input type="text" id="zipcode" placeholder="Zip Code">
+            </div>
+           
+            <div class="contact2">
+            <br><label id="email-label" class="contact_label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <label id="phone-label" class="contact_label" for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Home or Cell Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+           </div> 
+            
+           <div class="survey1">
+            <label id="number-label" for="number">How often do you visit per month?</label>
+            <input id="number" type="number" name="number" min="1" max="40" placeholder="Visits" required>
+           </div>
+           
+           <div>
+            <legend class="survey_label">How would you describe yourself?</legend>
+              <select class="dropdown" id="dropdown" name="modern">
+                  <option>Frequent Visitor</option>
+                  <option>Patron</option>
+                  <option>Philanthropist</option>
+                  <option>Professional Artist</option>
+                  <option>Academic: student or professor</option>
+               </select>
+           </div>
+        
+               
+           <div class="survey2">
+            <legend>Favorite Exhibition Space in Baker's Gallery:</legend>
+            <label id="garden"for="garden">The Front Garden</label>
+            <input type="radio"  name="area" value="garden">
+            <label  id="main"for="main">Main Gallery</label>
+            <input type="radio" name="area" value="main">
+            <label id="old" for="old">Old Museum</label>
+            <input type="radio"  name="area" value="old"> 
+            </div>
+        
+            <div class="checkbox">
+            <legend class="fave">Favorite Time of Year to Visit Our Gallery</legend>
+            <label class="season" for="fall">
+            <input type="checkbox" id="fall" name="color" value="fall">
+            Fall: I really enjoyed the Zdislaw Beksinski Memorial Exhibition.
+            </label>
+            <label class="season" for="winter">
+            <input type="checkbox" id="winter" name="color" value="winter">
+            Winter: I loved the Saturnalia Show and Shakespeare's What You Will.
+            </label>
+            <label class="season" for="spring">
+            <input type="checkbox" id="spring" name="color" value="spring"> Spring: I like the New Post-Impressionism Show. 
+            </label>  
+            <label class="season" for="summer">
+            <input type="checkbox" id="summer" name="color" value="summer"> Summer: I would like more shows like The Syd Mead and Designers Today Exhibition.
+            </label>
+            </div>
+           
+            
+            <div class="modern_select"> 
+              <legend class="fave">What is your favorite Modern Art Movement?</legend>
+              <select class="dropdown" id="dropdown" name="modern">
+                <option>Post Impressionism</option>
+                <option>Fauvism</option>
+                <option>Cubism</option>
+                <option>Futurism</option>
+                <option>Abstract Expressionism</option>
+                <option>Dadaism</option>
+                <option>Russian Modern Art (Suprematism)</option>
+                <option>Other</option>
+              </select>
+                </div>
+           <div class="contemporary_select">
+            <legend class="fave">What is your favorite Post-Modern Art Movement?</legend>
+              <select class="dropdown" id="dropdown" name="contemporary">
+                <option>Pop Art</option>
+                <option>Graphic Art/Design (Letter Art, etc)</option>
+                <option>Performance</option>
+                <option>Conceptual</option>
+                <option>Flux Movement</option>
+                <option>Minimalism</option>
+                <option>Video Installation</option>
+                <option>Neo-Pop</option>
+                <option>Computer Art</option>
+                <option>Other</option>
+              </select>
+               </div>
+               
+            <div class="checkbox">
+            <legend class="fave">Which Major Art Galleries Do You Like?</legend>
+            <label class="gallery" for="moma">
+            <input type="checkbox" id="moma" name="gallery" value="moma">
+            MoMA (Museum of Modern Art in New York)
+            </label>
+            <label class="gallery" for="met">
+            <input type="checkbox" id="met" name="gallery" value="met">
+            Met Gallery (Metropolitan Museum of Art in New York)
+            </label>
+            <label class="gallery" for="christies">
+            <input type="checkbox" id="christies" name="gallery" value="christies"> Christie's Auction House
+            </label>  
+            <label class="gallery" for="lacma">
+            <input type="checkbox" id="lacma" name="gallery" value="lacma"> LACMA (Los Angeles County Museum of Art)
+            </label>
+             <label class="gallery" for="broad">
+            <input type="checkbox" id="broad" name="gallery" value="broad"> Broad Gallery (located in Los Angeles)
+            </label>
+             <label class="gallery" for="getty">
+            <input type="checkbox" id="getty" name="gallery" value="getty"> Getty's (museum and villa)
+            </label>
+            <label class="gallery" for="other">
+            <input type="checkbox" id="other" name="gallery" value="other"> Other: I support independent art shows and galleries.
+            </label>
+            </div>
+            
+           <div class="comment_box">
+        <legend id="texbox_label" for="comments">Questions? Comments? Connections?</legend> 
+        <textarea id="comments" name="comments" placeholder="Tell us How You Feel"></textarea> 
+           </div>
+           <div class="button"><input id="submit" type="submit" value="Submit"></div>
+            
+            </form>
+       
+</main>
+ <footer><p>&copy; 2021 By Brandy Veal-Wolfe for COSW20</p></footer>
+  </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  
+</html>
