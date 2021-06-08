@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: linear-gradient(#f5efff, #ebf0ff);
+    color: #00296b;
+
+}
+main {
+    margin: 25px 10%;
+    padding: 2%;
+   
+}
+#hero_img {
+    width:100%;
+    max-width: 100%
+}
+#title_tag {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px
+   
+}
+#title_tag p {
+    font-size: 23px;
+}
+@media (max-width: 600px) {
+    #title_tag {
+        font-size: 15px;
+    }
+}
+h1 {
+    color: #a394d9;
+    margin-top: 50px;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-bottom: 20px;
+    background-color: #f5efff;
+}
+.logo_group {
+    display: inline-block;
+    padding-top: 10px
+}
+#header-img {
+    width: 75px;
+   
+}
+#logo_text {
+    width: 250px;
+    
+}
+@media (max-width: 600px) {
+    #header-img {
+        width: 45px;
+    } 
+    #logo_text {
+        width: 150px
+    }
+}
+nav {
+    padding-top: 10px;
+}
+nav ul {
+    list-style-type: none;
+    
+}
+nav ul li {
+   display: inline-block;
+    text-align: left;
+    padding: 10px;
+    
+}
+nav ul li a {
+    text-decoration: none;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    
+}
+.group-left {
+    flex: 1 1 50px;
+}
+
+#mobile_plans {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #a394d9;
+}
+.product_header h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+#services {
+    padding-bottom: 20px;
+}
+#services h3 {
+    text-align: center;
+    padding-top: 25px;
+}
+#services p {
+     margin: 20px 20%;
+    line-height: 1.5;
+}
+#prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.price_card {
+    flex-basis: 30%;
+    flex-grow: 1;
+    padding: 10px;
+    border: #666 1px solid;
+    border-radius: 5px;
+    margin: 2%;
+    background: linear-gradient(#a394d9, #d889b9, #ffa3db);
+    
+}
+#icon1, #icon2, #icon3 {
+    display:block;
+    width: 25%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+@media (max-width: 750px) {
+    #prices {
+        display: flex;
+        flex-direction: column;
+    }
+}
+#header_services {
+    text-align: center;
+}
+
+
+.price_card h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+.price_card p {
+    text-align: center;
+    line-height: 1.5;
+}
+.cost {
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;
+    
+}
+#form_section {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+}
+#form_section h2 {
+    padding: 1%
+}
+#form_section p {
+    padding: 2%
+}
+#form label {
+    font-size:25px;
+    margin: 3px;
+}
+
+#form {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+}
+#email {
+    padding: 2%;
+    margin-right: 5px;
+    border: #d100d1 1px solid;
+}
+#submit {
+     background-color: #d100d1;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    width: 25%;
+    cursor: pointer;
+    
+}
+
+#story {
+    margin: 40px 0
+}
+#story h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #a394d9;
+}
+#story p {
+    margin: 20px 20%;
+    line-height: 1.5;
+}
+#video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    max-width: 100%;
+}
+
+
+.footer_list {
+    list-style-type: none;
+    text-align: center;
+}
+    
+.footer_list li {
+    display: inline-block;
+    padding: 10px;
+}
+.footer_list li a {
+    text-decoration: none;
+}
+footer {
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+footer p {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    
+}

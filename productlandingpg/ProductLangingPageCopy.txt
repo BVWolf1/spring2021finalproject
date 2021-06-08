@@ -1,0 +1,30 @@
+Image and Vector Links
+
+
+https://cdn.pixabay.com/photo/2018/05/12/06/31/vintage-phone-3392579_960_720.png
+
+
+https://cdn.pixabay.com/photo/2013/07/13/10/30/icon-157358__340.png
+
+
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label>Email</label>
+            <input id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Get started here!" required>
+            <input>
+            
+        </form>
+
+
+<h2> Our Products</h2>
+        <p>Mobile Phones: we not only offer various media plans, we also offer mobile cellphones that are comparable to the industry giants Android and iPhone. See our phones and plans below.</p>
+        <p>Cell phone plans: 5G services that cover all of the US, Canada and Mexico and 50% discount for international calls for our loyal customers. Free Roaming. Free Texting. Free Streaming.</p>
+        <p>Cable: Our cable plans are single-serve with excellent premium channels including CinaMax, HBO and Showtime. Basic cable upon request (we call this our Nostalgia Plan).</p>
+        <p>Internet: Internet with high speed. Our super high speed is included in our premium package.</p>
+        <p>Landlines: This is for our old-timers. Landlines are available upon request or with our Nostalgia Package.</p>
+
+
+
+
+<div class="descript"><h3>Mobile Phone</h3>
+        <p> we not only offer various media plans, we also offer mobile cellphones that are comparable to the industry giants Android and iPhone. See our phones and plans below.</p></div>
+        

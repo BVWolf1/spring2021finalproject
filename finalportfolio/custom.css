@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 2%;
+    font-family: 'Open Sans', sans-serif;
+    background-color:#f1f3f2;
+    color: #43324f;
+    background-image: url(images/graphic1.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-attachment: fixed;
+}
+.red-bold {
+    font-weight: bold;
+    color:#e91d63; 
+}
+
+/* NAVBAR IS BOOTSTRAP */
+#navbar {
+    border-bottom:#e91d63 1px solid;
+    
+}
+.navbar-custom {
+    background-color: white;
+   
+}
+.navbar-custom .navbar-brand {
+    font-family: 'Anton', sans-serif;
+    color:#e91d63;
+}
+.navbar-toggler-icon {
+    background-color: #e91d63;
+}
+
+section {
+    margin: inherit;
+    padding: 5%;
+}
+
+/* WELCOME SECTION */
+
+#welcome-section {
+    height: 100vh;
+    position: static;
+    background-color: white;
+    background-image: url(images/graphic3.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    border: #e91d63 2px solid;
+}
+#welcome-section h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 80px;
+    
+} 
+
+
+#intro-tag  {
+    font-size: 30px;
+    margin-top: 20px;
+}
+#goal-line {
+    font-size: 20px;
+   
+}
+.color-bold {
+    color: #e91d63;
+    font-weight: bold
+}
+
+.name {
+    color: #e91d63;
+    font-family: 'Anton', sans-serif;
+}
+
+@media screen and (max-width: 950px){
+    #welcome-section {
+         background-image: none;
+    }
+
+}
+@media screen and (max-width: 500px){
+    #welcome-section {
+        background-image: none;
+    }
+    #welcome-section h1 {
+        font-size: 40px;
+    }
+    #intro-tag {
+        font-size: 20px;
+         
+    }
+    #goal-line {
+        font-size: 16px;
+         
+    }
+    
+}
+
+
+/* PPROJECTS SECTION */
+
+#projects {
+    background-color: #594988;
+}
+/*  PROJECTS CARDS ARE BOOTSTRAP */
+
+#projects h2 {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    background-color: white;
+    font-family: 'Anton', sans-serif;
+}
+.card-title {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+.card-body {
+    height: 100%;
+}
+
+.site_title {
+    margin: 2%;
+    
+}
+
+/* ABOUT SECTION */
+
+#about {
+    color: #43324f;
+    background-color: white;
+    border: #e91d63 2px solid;
+}
+#about h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+#portrait {
+    display: block;
+    border-radius: 50%;
+    border: #e91d63 1px solid;
+    width: 40%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+
+.container {
+    display: flex;
+}
+.credential {
+    flex: 70%;
+    padding-right: 2%;
+}
+.links {
+    flex: 30%;
+    border: dimgray 2px solid;
+    padding-top: 30px;
+    padding-right: 2%;
+    padding-bottom: 50px;
+    
+}
+.links h3 {
+    text-align: center;
+    color: #e91d63;
+    font-family: 'Anton', sans-serif;
+}
+#social-links {
+    padding: 10px;
+}
+#social-links p a {
+    text-decoration: none; 
+    
+}
+#cert {
+    width:50%;
+    max-width: 100%;
+}
+.cred-title {
+    font-family: 'Anton', sans-serif;
+    color: #e91d63;
+   
+}
+#soc-list {
+    list-style-type: none;
+}
+#soc-list li {
+    padding: 10px;
+}
+#soc-list li a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 850px){
+    #social-links {
+        font-size: 14px;
+    }
+    
+}
+    
+@media screen and (max-width: 500px) {
+    #about h2 {
+        font-size: 40px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .links {
+        margin-top: 20px;
+    }
+}
+/* REFLECTIONS SECTION*/
+#reflections {
+    background-color: white;
+    border: #e91d63 2px solid;
+}
+#reflections h2 {
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+article > h3 {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    #reflections h2 {
+        font-size: 40px;
+    }
+    #reflections > article h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+/* FOOTER */
+
+footer ul {
+  
+    list-style-type: none;
+}
+footer ul li {
+    text-decoration: none;
+    display: inline;
+    padding: 10px;
+    margin-right: 3px;
+}
+footer p {
+    margin-left: 35px;
+}
+footer p b {
+    color: #e91d63;
+}
+footer {
+    clear: both;
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 150px;
+
+}
