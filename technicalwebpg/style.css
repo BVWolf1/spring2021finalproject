@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #292758;
+}
+#navbar {
+    margin: 0;
+    padding:0;
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+       
+}
+#navhead {
+    font-family: 'Roboto Mono', monospace;
+    color: #f05033;
+    font-size: 30px;
+    margin-top: 60px;
+    
+}
+nav ul {
+    padding: 0 10px;
+    list-style-type: none;
+    
+}
+nav ul li {
+    padding: 10px;
+    margin: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #292758;   
+   
+}
+span {
+    color: #f05033;
+    font-weight: 700;
+}
+nav ul li a:hover {
+  color: #f05033;
+}
+
+main {
+    background-color: #fbfbfa;
+    margin-left: 300px;
+    padding: 5%;
+}
+header, h2, h3 {
+    font-family: 'Roboto Mono', monospace;  
+}
+.body_head {
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 5px;
+    font-weight: bold;
+   
+    
+}
+#img_1, img {
+    display:block;
+    margin: 3% auto;
+    padding: 2%;
+    width: 50%;
+    max-width: 100%;
+    border: #f05033 1px solid; 
+}
+
+#caption1 {
+    font-size: 14px;
+    text-align: center;
+}
+.lists {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 20px;
+    line-height: 1.6;
+    list-style-image:url(images/listdot.png);
+}
+.lists li {
+    padding: 1%;
+}
+
+.order_list {
+    margin: 0 5%;
+    line-height: 1.6;
+}
+p {
+    padding: 10px;
+    line-height: 1.6;
+}
+
+section li {
+    line-height: 1.6;
+}
+code {
+    padding: 5px;
+    background-color: #B4c4dc;
+}
+@media screen and (max-width: 700px) {
+    #navhead {
+      text-align: center;
+    }
+    #navbar {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  }
+  
+    main {  
+      margin: auto;
+
+    }
+      
+}
+@media screen and (max-width: 400px) {
+    #navhead {
+      text-align: center;
+    }
+    #navbar {
+        font-size: 14px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-right: 5%;
+     
+  }
+    main {  
+      margin: auto;
+
+    }
+
+    }
+
+
+
+
+

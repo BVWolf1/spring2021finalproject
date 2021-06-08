@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>GitHub Technical Documentation</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono&display=swap" rel="stylesheet">
+      <link href="style.css" rel="stylesheet" type="text/css" /> 
+  </head>
+    
+  <body> 
+   
+   <nav id="navbar">
+       <header id="navhead">Guide to GitHub</header>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#intro_to_github">Intro to GitHub</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#the_basics">The Basics</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#installing_git">Installing Git</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#pushing_to_github">Pushing to GitHub</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#pull_requests">Pull Requests</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#conclusion">Conclusion</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#references">References</a>
+    </li>
+  </ul>
+</nav>
+    
+  
+    <main id="main-doc">
+          <div class="container">
+        <section id="intro_to_github" class="main-section">
+        <header class="body_head"><h2>Intro to GitHub</h2></header>
+             <p>Let's say that you write a paper for an English class and you write a new version each time you want to add new ideas
+            or information. Maybe you remember what your college professor told you that you may want to add to your essay. You save the file as "Essay_1", but you still want to keep track of "Essay_1", while creating "New_Essay1". Your two classmates are helping you with "Essay_1", because Professor Hightower said you can collaborate on this essay. They add an addendum to "Essay_1". Perhaps, something got lost when you saved the new file that you want to go back. The purpose of Git is to keep track of "Essay_1", "New_Essay1" and "Final_NewEssay1" in a single system. Except, instead of essay from a college English course, these are projects created by web developers.</p>
+            <p>Git was created by Linus Torvalds. He is also the credited for creating the Linux Operating system. Git is a version control system intended for programmers to come together and contribute to the Linux Project. This version control system is essential for web development to share code among eachother.</p>
+            <p>Like Linux, Git is free and open source. One advantage is the streamlining of workflow, making it easier to change and share files without them getting lost or corrupted.</p>
+                <h3>Git and GitHub Advantages and Use:</h3>
+             <div class="lists">
+             <ul>
+                 <li>A version control system</li>
+                 <li>Helps keep track of code as it changes (evolves in some cases)</li>
+                 <li>It is a professional way to show off code.</li>
+                 <li>Standard use in the tech industry. Sometimes viewed as a "resume" or "portfolio" of coding.</li>
+                 <li>Git is a programming language which sole function is pulling and pushing code into a version control system</li>
+                 <li>Programmers can go back in time to earlier saves in their projects.</li>
+                <li>It makes it easier to share code with other programmers. Making group projects less of a pain interms of collaboration.</li>
+             </ul>
+                 </div>
+                <img id="img_1" src="images/gitworkflow.JPG">
+                <p id="caption1">The graphic above depicts the structure of how repositories typically work on GitHub</p>
+                <h3>The Disdavantages of Git and GitHub:</h3>
+            <div class="lists">
+             <ul>
+                 <li>Security Risks: As with any hosting site, there are concerns for security.</li>
+                 <li>On GitHub, to create private repositories, one must pay a premium.</li>
+                 <li>For Git and anyother version control system, there is some coding involved (commands), which can be a problem for those who are starting with coding. This is a minor concern.</li>
+                 <li>There is a learning curve for those who have never used a version control system.</li>
+                 <li>Individuals can just come in and change code.Some programmers, especially ones who are new to programming may not be used to the concept of sharing code, which is the purpose of Git and GitHub in the first place.</li>
+             </ul>
+                 </div>
+            
+             <p>Sometimes Git and GitHub are mistakenly interchangebly used. However, there is a difference. Git is the program itself and GitHub is the web service that hosts and manage project files. Although there are other similar services online, GitHub is the most popular for storing Git projects, used by millions worldwide.</p>
+            <p>This technical guide is a stress-free walkthrough to Git and GitHub.</p>
+               
+        </section>
+         </div> 
+            <div class="container">
+        <section id="the_basics" class="main-section">
+         <header class="body_head"><h2>The Basics</h2></header>
+             <p>Although this technical guide will primarily discuss how to deploy projects directly to GitHub from the site, it would be beneficial to mention Git along with GitHub. They both go hand-in-hand.</p>
+            <p>Skills needed for GitHub are:</p>
+                <div class="lists">
+            <ul>
+                <li>Some programming: introductory level of programming or an interest and programming is recommended to learn Git and GitHub. It has "programmy" commands.</li>
+                <li>Knowledge of some programming languages: to upload projects. GitHub supports files in all programming languages. HTML and CSS are the most common.</li>
+                <li>Some knowledge of how file sharing works. The system is designed to share code among programming peers</li>
+                <li>Knowledge of how the Internet works.</li>    
+                </ul>
+                    </div>
+            <h3>Git Commands</h3>
+            <p>The most common way add projects to GitHub is to push code from a local repository to a remote repository. </p>
+            <p>Below are important commands to help push code onto a repository.</p>
+                   <div class="lists">
+            <ul>
+                <li><code>git init</code>- initialises local repositories.</li>
+                <li><code>git status</code>- checks status of working tree</li>
+                <li><code>git add</code>- adds files to index</li>
+                <li><code>git commit</code>- commits changes in index</li>    
+                </ul>
+                </div>
+            <div class="lists">
+            <p>Below are some other important and commonly used commands when using Git and GitHub.</p>
+            <ul>
+                <li><code> git clone</code>- clones a repository into a new directory.</li>
+                <li><code>git branch</code>- lists creates or deletes branches</li>
+                <li><code>git push</code>- updates remote refs along with associated objects</li>
+                <li><code>git pull</code>- fetches and integrates with another repository or local branch</li>
+                <li><code>git fetch</code>-downloads objects and refs from another repository as well as their associated histories.</li>
+                </ul>
+                </div>
+            <p>There are so many Git commands that range from pushing code onto a repository, creating and accepting pull requests, correcting code in files. These other commands can be found on <a href="https://git-scm.com/docs">here</a> in greater details.</p>
+            
+        </section>
+                </div>
+            <div class="container">
+        <section id="installing_git" class="main-section">
+         <header class="body_head"><h2>Installing Git</h2></header>
+            
+             <p>In order to get the most out of GitHub, you must install Git version control system onto your computer.</p>
+            <div class="order_list">
+            <p>Download Git from the <a href="https://git-scm.com/downloads">Git</a> website</p>
+                <img src="images/gitdownload.JPG">
+            <p>When asked to choose a default editor used by Git choose the text editor of choice. Although Vim is the default text editor for Git, it is recommended to use a different text editor due to the problems that many programmers have working with it. Text editors such as Visual Studio Code, Atom and even Brackets are good recommendations among many out there.</p>
+                <img src="images/gitinstall2.JPG">
+            <p>When the prompt shows "Adjusting name of initial branch in new repositories", it gives two choices.</p>
+                <img src="images/gitinstall4.JPG">
+                <div class="lists">
+                <ul>
+                <li>Let Git decide: creates a default branch name for new repositories.</li>
+                <li>Override the default name for new repositories: allows teams and individual programmers to rename default branches. This is recommended.</li>
+                </ul>
+                </div>
+                
+            <p>Adjusting Path Environment: option 1 or option 2 is best for those who are not previously familiar with Git.</p>
+                <img src="images/gitinstall5.JPG">
+            <p>For configurating the terminal emulator to use with Git Bash, choose Use MinTTY (Default Terminal)</p>
+                <img src="images/gitintall6.JPG">
+            <p>Choose default options</p>
+                <img src="images/gitinstall7.JPG">
+            <p>Click Install</p>
+            </div>
+                 
+             
+        </section>
+                </div>
+            <div class="container">
+        <section id="pushing_to_github" class="main-section">
+         <header class="body_head"><h2>Pushing to GitHub</h2></header>
+            
+             <p>To push code from a local repository to GitHub, first sign into GitHub. </p>
+            <p>Click "New Repository", which is a plus sign in the right hand corner of the page, next to the avatar icon</p>
+            <img src="images/screenshot2.JPG">
+            <p>Where it says Repository Name, add a name of choice, for example "previous projects". It's optional, but doing this will give your fellow programmers an idea of what they're looking at.</p>
+            <p><span>Note:</span> the public is default, but you can switch to private if you have a premium account, as mentioned in Intro section.</p>
+            <p><code>ReadMe.md</code> file is a description of files that go into details about a project.</p>
+                 
+             <p>Click "New Repository", which is a plus sign in the right hand corner of the page next to the avatar icon on your GitHub account.</p>
+            <p>Where it says Repository Name, add a name for the repository. This is where your projects (files) will be held. After naming the file, add a description. It is optional, but doing so will give your fellow programmers an idea of what they are looking at.</p>
+            <p>ReadMe file: A description of files that go into details about the project. This is pretty important.</p>
+            <img src="images/screenshot3.JPG">
+            <p>Next we are going to open the terminal. Set the project as current working directory.</p>
+            <p>Type <code>pwd</code> into the terminal. This command finds and locates the working directory by specifying the exact location of the folder. The command <code>ls</code> will list contents of the folder.</p>
+            <p>Initialize the local directory as a Git repository bby typing <code>git init</code> into the terminal.</p>
+            <p>Add files to the repository (the new local repository). This prepares the files to be staged. The files will be ready for first commit (staged). To do this, type <code>git add</code> into the command line in the terminal. </p>
+            <p>Committing files: to commit files that you stage for commit in local repository, type <code>git commit -m</code> first commit</p>
+            <p>Copy the remote repository's URL, It is in the quick setup page on GitHub</p>
+            <p>Add the URL for the remote repository where your local repository will be pushed. Then type <code>git remote add origin</code> and paste the URL next to the command.</p>
+            <p>push code in the local repository to GitHub by typing <code>git push -u origin master</code></p>
+            <p>Enter the username and password into the terminal command line</p>
+            <p>View the repository files in GitHub</p>
+                
+        </section>
+                </div>
+        <div class="container">
+        <section id="pull_requests" class="main-section">
+         <header class="body_head"><h2>Pull Requests</h2></header>
+              <p>What is pulling a request: when you are on GitHub and you come across a repository and you want to change and add to it, pull requests allows the programmer to "ask" the owner of the repository to pull in your changes. To do this, the directions are below. </p>
+            
+             <div class="lists">
+              <ol>
+                <li>Click the Fork button and fork the repository. It will make a copy of the files in the repository in GitHub. When you fork the repository, the forked copy is yours to change and modify.</li>
+                <li>click on the clone or download bbutton next to find file. Copy the link. In the terminal type <code>git clone</code> and paste the link next to the command.</li>
+                <li>Create a new branch by typing <code>git checkout -b</code> and the file. Open the ReadMe or file and make changes. The command <code>git status</code> pulls up the status</li>
+                <li><code>git diff</code> compares the old changes to new changes made. Type <code>git add ReadMe.md</code> and press enter. Add a message for the file for example "found a type in file, changed it."</li> 
+                <li>Click Pull Request. It opens pull requests for the owner of the repository to see the message or request. It shows the commits made to the files and compares the old changes to new.</li>
+                </ol>
+                 <p>If the owner likes the pull request, they will merge request with the Confirm Merge button.</p>
+            </div>
+        </section>
+            <div class="container">
+        <section id="conclusion" class="main-section">
+         <header class="body_head"><h2>Conclusion</h2></header>
+            <p>Although GitHub is a useful tool to store, change and save code, along with sharing code with other programmers, it can be argued that it is not fool proof. It is a learn curve that takes time to understand and get use to. Although this guide is just touches the surface of GitHub, it is not without flaws. Below is a list of what can go wrong and solutions for when files are not properly pushed on to the repository.</p>
+             <div class="lists">
+              <ul>
+                <li>The terminal does not detect the file that you are trying to push onto the repository. This happens because the file is in the place on the desktop that cannot be located. The best solution is to place the file on where it can be detected by the terminal. </li>
+                <li>The file is published. It would say "Cannot Publish Unborn Head". The best way to solve this is to wait until the file is completely published or start over. </li>    
+                </ul>
+            </div>
+            <div>GitHub was created primarily for professional programmers and software engineers. However, using GitHub as a beginner programmer has its benefits. It can be a way to demonstrate to potential employers that show commitment and progress in learning code. For students, they can use GitHub to store their projects because it exposes their work to other programmers who can give feedback and contribute to their files. The community will expose them to them to new ideas, and professionals in the tech industry. The best way to use GitHub to its full advantage is by uploading individual projects. A GitHub account will keep track of how much coding was done on an account through a point system. Building this point system will build a strong reputation whether the programmer is a student learning, an individual learning code as a hobby or a professional in the industry for many years.</div>
+        </section>
+              </div>
+            <div class="container">
+          <section id="references" class="main-section">
+         <header class="body_head"><h2>References</h2></header>
+              <p>There are so many resources dedicated to GitHub and Git. Here is a list of sources used to compile this guide below:</p>
+              <p>This <a href="https://git-scm.com/book/en/v2">documentation</a> from <a href="https://git-scm.com/">git-scm.com</a> discusses Git in depth. There is a PDF of the book <em>Pro Git</em> written by Scott Chacon and Ben Straub. The webpage linked is a more indepth guide on Git. </p>
+              <p><a href="https://docs.github.com/en/github">GitHub Docs</a> is an indepth page on how to create an account in GitHub and how to use Github along with managing an account there.</p>
+              <p><a href="https://www.w3schools.com/GIT/default.asp">W3schools</a> has a tutorial on how to use GitHub and Git. Some material used in this documentation is sourced from W3Schools.</p>
+              <p>Three YouTube videos that give a more in depth instruction on how to use Git and GitHub are Brad Traversy's <a href="https://www.youtube.com/watch?v=SWYqp7iY_Tc">Git and GitHub Crash Course</a>, <a href="https://www.youtube.com/watch?v=wrb7Gge9yoE">Codecademy</a>Codecademy quick instruction on how to deploy projects onto repositories and this <a href="https://www.youtube.com/watch?v=rgbCcBNZcdQ">video</a> on how to pull requests on GitHub. These tutorials aided in the creation of this documentation. Credit is given to the creators of these videos as well.</p>
+            </section>
+            </div>
+           
+        </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+         
+</html>
